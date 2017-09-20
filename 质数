@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    int i,k,n;
+    for(i=100;i<=200;i++)
+      {k=(int)sqrt(i);
+        for(n=2;n<=k;n++)
+          { if(i%n==0)break;}
+          if(n>k) printf("%d,",i);}
+    return 0;
+}
